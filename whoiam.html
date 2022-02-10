@@ -11,47 +11,45 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
-        h1{
-            font-size: 4.5rem;
-            font-weight: 700;
-            margin-top: 70px;
-            letter-spacing: 1px;
-            text-align: center;
-        }
-        div{
-            width: 1200px;
-            height: 200px;
-            display: flex;
+        .container{
+            display: grid;
+            align-items: center;
             justify-content: center;
-            text-align: center;
-            padding-top: 10px;
+            grid-template-columns: 600px; 
+            grid-template-rows: auto; 
         }
-        p{
+        .title{
+            grid-column-start: 1; 
+            grid-column-end: 4;  
+            text-align: center;
+            margin-top: 200px;
+            font-size: 4rem;
+        }
+        .text{
             font-size: 1.5rem;
-            margin-top: 2px;
-            letter-spacing: 1px;
-            margin-left: 500px;
-            padding-left: 200px;
-       }
+            text-align: justify;
+        }
     </style>
 </head>
 <body>
-    <h1>
-        Quien soy?
-    </h1>
-    <div>
-        <p >
-            Soy un desarrollador de software y actualmente me encuentro trabajando de manera autónoma 
-            con la finalidad de apoyar a pequeñas y medianas empresas a tener mayor presencia digital,
-             así como también a aumentar sus ingresos.
-            Soy un apasionado de la tecnología y del conocimiento autodidacta por lo que me gusta
-            nunca parar de aprender.
-            Gracias a mis habilidades como lo son ser una persona analítica perseverante y con actitud
-            de liderazgo me he permitido terminar mis objetivos anteriormente planteados a base de 
-            tecnologías como lo son: HTML, CSS, JavaScript, React, Angular, Bootstrap, etc.
-        </p>
-        
+    <div class="container">
+        <h1 class="title">
+            Quien soy?
+        </h1>
+        <div class="text">
+            <p >
+                Soy un desarrollador de software y actualmente me encuentro trabajando de manera autónoma 
+                con la finalidad de apoyar a pequeñas y medianas empresas a tener mayor presencia digital,
+                 así como también a aumentar sus ingresos.
+                Soy un apasionado de la tecnología y del conocimiento autodidacta por lo que me gusta
+                nunca parar de aprender.
+                Gracias a mis habilidades como lo son ser una persona analítica perseverante y con actitud
+                de liderazgo me he permitido terminar mis objetivos anteriormente planteados a base de 
+                tecnologías como lo son: HTML, CSS, JavaScript, React, Angular, Bootstrap, etc.
+            </p>
+            
+        </div>
     </div>
-    
+        
 </body>
 </html>
