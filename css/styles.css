@@ -1,17 +1,7 @@
-:root {
-    --white: #ffffff;
-    --facebook: #1877f2;
-    --twitter: #1DA1F2;
-    --instagram: #E1306C;
-    --youtube: #FF0000;
-    --github: #333333;
-}
-
-.index{
-    background-image: url(./img/pexels-cottonbro-3944406.jpg);
+body{
+    background-image: url(../img/pexels-cottonbro-3944406.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-repeat: no-repeat;   
 }
 .container-logo{
     display: grid;

@@ -11,24 +11,53 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
-        cv{
-            width: 750px;
-            height: 100px;
-            display: flex;
-            justify-content: flex-end;
-            align-items: end;
+        .container{
+            
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+
         }
-        /* img{
-            width: 750px;
-            display: flex;
-            justify-content: end;
-            position: static;
-        } */
+        .container-info{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: repeat(2, 100px);
+            place-content: center;
+            /* gap: 10px; */
+            margin-top: 80px;
+        }
+        .info{
+            font-size: 2rem;
+        }
+        
+        .cv{
+            width: 700px;
+            height: 850px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-right: 50px;
+        }
+        .descargar{
+            justify-items: center;
+            width: 100px;
+            height: 50px;
+            border-radius: 30px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(143, 204, 143);
+            
+        }
+        
     </style>
 </head>
 <body>
-    <section class="cv">
-        <img src="./img/0001.jpg" alt="CV_image">
+    <section class="container">
+
+        <div class="info container-info">
+            <h1>Descargar mi Curriculum Vitae</h1>
+            <button class="descargar">
+                Descargar
+            </button>
+        </div>
+            <img class="cv" src="./img/0001.jpg" alt="CV_image">
     </section>
     
 </body>
