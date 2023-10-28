@@ -1,178 +1,199 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-    <title>Eduardo Hernández Carrasco</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <style>
-        .card-container {
-            display: flex;
-            flex-wrap: wrap;
-        }
+	<head>
+		<title>Eduardo Hernández Carrasco</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.card-container {
+				display: flex;
+				flex-wrap: wrap;
+			}
+	
+			.card {
+				width: calc(33.33% - 20px); /* 33.33% para mostrar 3 por fila con margen entre ellas */
+				margin: 10px; /* Espacio entre las tarjetas */
+				background: white;
+				padding: .4em;
+				border-radius: 6px;
+				padding-top: 25px; /* Espacio superior */
+			}
+	
+			.card-image {
+				background-color: rgb(236, 236, 236);
+				width: 100%;
+				height: 130px;
+				border-radius: 6px 6px 0 0;
+			}
+	
+			.card-image:hover {
+				transform: scale(0.98);
+			}
+	
+			.category:hover {
+				cursor: pointer;
+			}
+	
+			.heading {
+				font-weight: 600;
+				color: rgb(88, 87, 87);
+				padding: 7px;
+			}
+	
+			.heading:hover {
+				cursor: pointer;
+			}
+	
+			.name {
+				font-weight: 600;
+			}
+	
+			.name:hover {
+				cursor: pointer;
+			}
+	
+			/* Media query para tablet y computadora */
+			@media screen and (max-width: 1024px) {
+				.card {
+					width: calc(50% - 20px); /* 50% para mostrar 2 por fila */
+				}
+			}
+	
+			/* Media query para celular */
+			@media screen and (max-width: 600px) {
+				.card {
+					width: calc(100% - 20px); /* 100% para mostrar 1 por fila */
+				}
+			}
+			.card {
+		text-align: center; /* Centra el texto horizontalmente */
+	}
+		</style>
+	</head>
+	<body class="is-preload landing">
+		<div id="page-wrapper">
 
-        .card {
-            width: calc(33.33% - 20px); /* 33.33% para mostrar 3 por fila con margen entre ellas */
-            margin: 10px; /* Espacio entre las tarjetas */
-            background: white;
-            padding: .4em;
-            border-radius: 6px;
-            padding-top: 25px; /* Espacio superior */
-        }
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Home</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="aboutme.html">Sobre mi</a></li>
+							<li><a href="skills.html">Skills</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+						</ul>
+					</nav>
+				</header>
 
-        .card-image {
-            background-color: rgb(236, 236, 236);
-            width: 100%;
-            height: 130px;
-            border-radius: 6px 6px 0 0;
-        }
-
-        .card-image:hover {
-            transform: scale(0.98);
-        }
-
-        .category:hover {
-            cursor: pointer;
-        }
-
-        .heading {
-            font-weight: 600;
-            color: rgb(88, 87, 87);
-            padding: 7px;
-        }
-
-        .heading:hover {
-            cursor: pointer;
-        }
-
-        .name {
-            font-weight: 600;
-        }
-
-        .name:hover {
-            cursor: pointer;
-        }
-
-        /* Media query para tablet y computadora */
-        @media screen and (max-width: 1024px) {
-            .card {
-                width: calc(50% - 20px); /* 50% para mostrar 2 por fila */
-            }
-        }
-
-        /* Media query para celular */
-        @media screen and (max-width: 600px) {
-            .card {
-                width: calc(100% - 20px); /* 100% para mostrar 1 por fila */
-            }
-        }
-		.card {
-    text-align: center; /* Centra el texto horizontalmente */
-}
-    </style>
-</head>
-
-<body class="is-preload landing">
-<div id="page-wrapper">
-    <!-- Header -->
-    <header id="header">
-        <h1 id="logo"><a href="index.html">Home</a></h1>
-        <nav id="nav">
-            <ul>
-                <li><a href="aboutme.html">Sobre mi</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Banner -->
-    <section id="banner">
-        <div class="content">
-            <div class="card-container">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/icons/DeviconHtml5.svg" alt="HTML Logo">
-                    </div>
-                    <div class="heading">HTML</div>
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/icons/DeviconCss3.svg" alt="CSS Logo">
-                    </div>
-                    <div class="heading">CSS</div>
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/icons/SkillIconsJavascript.svg" alt="JavaScript Logo">
-                    </div>
-                    <div class="heading">JavaScript</div>
-                </div>
-				<div class="card-container">
-					<div class="card">
-						<div class="card-image">
-							<img src="assets/icons/RiReactjsFill.svg" alt="HTML Logo">
-						</div>
-						<div class="heading">React</div>
-					</div>
-					<div class="card">
-						<div class="card-image">
-							<img src="assets/icons/LogosAngularIcon.svg" alt="CSS Logo">
-						</div>
-						<div class="heading">Angular</div>
-					</div>
-					<div class="card">
-						<div class="card-image">
-							<img src="assets/icons/LogosGitIcon.svg" alt="JavaScript Logo">
-						</div>
-						<div class="heading">Git</div>
-					</div>
-					<div class="card-container">
-						<div class="card">
-							<div class="card-image">
-								<img src="assets/icons/MdiGithub.svg" alt="HTML Logo">
+			<!-- Banner -->
+				<section id="banner">
+					<div class="content">
+						<div class="card-container">
+							<div class="card">
+								<div class="card-image">
+										<img src="assets/icons/DeviconHtml5.svg" alt="HTML Logo">
+									</div>
+									<div class="heading">HTML</div>
+								</div>
+								<div class="card">
+									<div class="card-image">
+										<img src="assets/icons/DeviconCss3.svg" alt="CSS Logo">
+									</div>
+									<div class="heading">CSS</div>
+								</div>
+								<div class="card">
+									<div class="card-image">
+										<img src="assets/icons/SkillIconsJavascript.svg" alt="JavaScript Logo">
+									</div>
+									<div class="heading">JavaScript</div>
+								</div>
+								<div class="card">
+									<div class="card-image">
+										<img src="assets/icons/VscodeIconsFileTypeNode2.svg" alt="JavaScript Logo">
+									</div>
+									<div class="heading">NodeJS</div>
+								</div>
+								<div class="card">
+									<div class="card-image">
+										<img src="assets/icons/LogosVisualStudioCode.svg" alt="JavaScript Logo">
+									</div>
+									<div class="heading">Visual Studio Code</div>
+								</div>
+								<div class="card">
+									<div class="card-image">
+										<img src="assets/icons/DeviconFigma.svg" alt="JavaScript Logo">
+									</div>
+									<div class="heading">Figma</div>
+								</div>
 							</div>
-							<div class="heading">GitHub</div>
-						</div>
-						<div class="card">
-							<div class="card-image">
-								<img src="assets/icons/LogosFlutter.svg" alt="CSS Logo">
+							<div class="card-container">
+								<div class="card">
+									<div class="card-image">
+										<img src="assets/icons/RiReactjsFill.svg" alt="HTML Logo">
+									</div>
+									<div class="heading">React</div>
+								</div>
+								<div class="card">
+									<div class="card-image">
+										<img src="assets/icons/LogosAngularIcon.svg" alt="CSS Logo">
+									</div>
+									<div class="heading">Angular</div>
+								</div>
+								<div class="card">
+									<div class="card-image">
+										<img src="assets/icons/LogosGitIcon.svg" alt="JavaScript Logo">
+									</div>
+									<div class="heading">Git</div>
+								</div>			
 							</div>
-							<div class="heading">Flutter</div>
-						</div>
-						<div class="card">
-							<div class="card-image">
-								<img src="assets/icons/LogosFirebase.svg" alt="JavaScript Logo">
+							<div class="card-container">
+								<div class="card">
+									<div class="card-image">
+										<img src="assets/icons/MdiGithub.svg" alt="HTML Logo">
+									</div>
+									<div class="heading">GitHub</div>
+								</div>
+								<div class="card">
+									<div class="card-image">
+										<img src="assets/icons/LogosFlutter.svg" alt="CSS Logo">
+									</div>
+									<div class="heading">Flutterr</div>
+								</div>
+								<div class="card">
+									<div class="card-image">
+										<img src="assets/icons/LogosFirebase.svg" alt="JavaScript Logo">
+									</div>
+									<div class="heading">Firebase</div>
+								</div>			
 							</div>
-							<div class="heading">Firebase</div>
-						</div>		
-                <!-- Agregar más tarjetas aquí -->
-            </div>
-			
-        </div>
-    </section>
-</div> <!-- Cierra el div con id="page-wrapper" -->
+							
+					</div>
 
+		</div>
 <!-- Footer -->
 <footer id="footer">
-    <ul class="icons">
-        <li><a href="https://twitter.com/EdwHerCar" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="https://www.facebook.com/EdwHerCar" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-        <li><a href="https://www.instagram.com/edwhercar" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-        <li><a href="https://www.linkedin.com/in/edwhercar" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-        <li><a href="https://github.com/EdwHerCar" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-    </ul>
+	<ul class="icons">
+		<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+		<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+		<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+		<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+		<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+		<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+	</ul>
 </footer>
 
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/jquery.dropotron.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-</body>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>

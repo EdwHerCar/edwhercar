@@ -6,6 +6,71 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.card-container {
+				display: flex;
+				flex-wrap: wrap;
+			}
+	
+			.card {
+				width: calc(33.33% - 20px); /* 33.33% para mostrar 3 por fila con margen entre ellas */
+				margin: 10px; /* Espacio entre las tarjetas */
+				background: white;
+				padding: .4em;
+				border-radius: 6px;
+				padding-top: 25px; /* Espacio superior */
+			}
+	
+			.card-image {
+				background-color: rgb(236, 236, 236);
+				width: 100%;
+				height: 130px;
+				border-radius: 6px 6px 0 0;
+			}
+	
+			.card-image:hover {
+				transform: scale(0.98);
+			}
+	
+			.category:hover {
+				cursor: pointer;
+			}
+	
+			.heading {
+				font-weight: 600;
+				color: rgb(88, 87, 87);
+				padding: 7px;
+			}
+	
+			.heading:hover {
+				cursor: pointer;
+			}
+	
+			.name {
+				font-weight: 600;
+			}
+	
+			.name:hover {
+				cursor: pointer;
+			}
+	
+			/* Media query para tablet y computadora */
+			@media screen and (max-width: 1024px) {
+				.card {
+					width: calc(50% - 20px); /* 50% para mostrar 2 por fila */
+				}
+			}
+	
+			/* Media query para celular */
+			@media screen and (max-width: 600px) {
+				.card {
+					width: calc(100% - 20px); /* 100% para mostrar 1 por fila */
+				}
+			}
+			.card {
+		text-align: center; /* Centra el texto horizontalmente */
+	}
+		</style>
 	</head>
 	<body class="is-preload landing">
 		<div id="page-wrapper">
@@ -25,28 +90,82 @@
 			<!-- Banner -->
 				<section id="banner">
 					<div class="content">
-						<header>
-							<h2>Hola, Soy Eduardo</h2>
-							<p>TSU. Desarrollo de software multiplataforma<br />
-							Estudiante de Ing. en Gestion y Desarrollo de software</p>
-						</header>
-						<span class="image"><img src="images/IMG_4570.jpg" alt="" /></span>
+						<div class="card-container">
+							<div class="card">
+								<div class="card-image">
+										<img src="assets/icons/DeviconHtml5.svg" alt="HTML Logo">
+									</div>
+									<div class="heading">HTML</div>
+								</div>
+								<div class="card">
+									<div class="card-image">
+										<img src="assets/icons/DeviconCss3.svg" alt="CSS Logo">
+									</div>
+									<div class="heading">CSS</div>
+								</div>
+								<div class="card">
+									<div class="card-image">
+										<img src="assets/icons/SkillIconsJavascript.svg" alt="JavaScript Logo">
+									</div>
+									<div class="heading">JavaScript</div>
+								</div>
+							</div>
+							<div class="card-container">
+								<div class="card">
+									<div class="card-image">
+										<img src="assets/icons/RiReactjsFill.svg" alt="HTML Logo">
+									</div>
+									<div class="heading">React</div>
+								</div>
+								<div class="card">
+									<div class="card-image">
+										<img src="assets/icons/LogosAngularIcon.svg" alt="CSS Logo">
+									</div>
+									<div class="heading">Angular</div>
+								</div>
+								<div class="card">
+									<div class="card-image">
+										<img src="assets/icons/LogosGitIcon.svg" alt="JavaScript Logo">
+									</div>
+									<div class="heading">Git</div>
+								</div>			
+							</div>
+							<div class="card-container">
+								<div class="card">
+									<div class="card-image">
+										<img src="assets/icons/RiReactjsFill.svg" alt="HTML Logo">
+									</div>
+									<div class="heading">React</div>
+								</div>
+								<div class="card">
+									<div class="card-image">
+										<img src="assets/icons/LogosAngularIcon.svg" alt="CSS Logo">
+									</div>
+									<div class="heading">Angular</div>
+								</div>
+								<div class="card">
+									<div class="card-image">
+										<img src="assets/icons/LogosGitIcon.svg" alt="JavaScript Logo">
+									</div>
+									<div class="heading">Git</div>
+								</div>			
+							</div>
+							
 					</div>
 
-
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</footer>
-
 		</div>
+<!-- Footer -->
+<footer id="footer">
+	<ul class="icons">
+		<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+		<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+		<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+		<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+		<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+		<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+	</ul>
+</footer>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
